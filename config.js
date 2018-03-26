@@ -1,7 +1,8 @@
 const url = 'http://193.112.55.79:9090/api/';
 
 const Api = {
-    getindexmenu: url +'getindexmenu'
+    getindexmenu: url +'getindexmenu',
+    getmoneyctrl: url +'getmoneyctrl',
 }
 
 

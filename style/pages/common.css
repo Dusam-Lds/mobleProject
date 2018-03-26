@@ -1,0 +1,85 @@
+body {
+  padding-bottom: 50px;
+  padding-top: 60px;
+}
+.custom_header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ff841d;
+  z-index: 100;
+}
+.custom_header .navbar-header > a {
+  display: inline-block;
+}
+.custom_header .navbar-header .navbar-brand {
+  background: url(../../images/header_logo.png) no-repeat center;
+  background-size: 80%;
+  width: 60%;
+}
+.custom_header .navbar-header .app-donw {
+  background: url(../../images/header_app.png) no-repeat center;
+  background-size: 70%;
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.custom_search {
+  padding: 20px 10px;
+}
+.custom_menus .col-xs-3 {
+  padding: 8px;
+}
+.custom_menus .col-xs-3 a {
+  text-align: center;
+  color: #000;
+  display: block;
+}
+.custom_menus .col-xs-3 a > img {
+  width: 100%;
+}
+.custom_menus .col-xs-3 a > span {
+  display: inline-block;
+  margin-top: 5px;
+}
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-bottom: 2px solid #f1f1f1;
+}
+.footer .brand {
+  background: #ff9a16;
+  padding: 5px 10px;
+}
+.footer .brand > span {
+  color: #fff;
+  font-weight: bold;
+}
+.footer .brand > a {
+  color: #fff;
+}
+.footer > ul {
+  padding: 10px 0;
+}
+.footer > ul li {
+  list-style: none;
+  float: left;
+  border: 1px solid #ccc;
+  width: 33.33%;
+  padding: 4px 0;
+}
+.footer > ul li > a {
+  color: #000;
+}
+.footer .custom_buttom {
+  background: #f1f1f1;
+}
+.footer .custom_buttom > div > span {
+  color: red;
+}
