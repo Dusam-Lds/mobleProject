@@ -1,0 +1,55 @@
+.custom_header {
+  background: #ff841d;
+}
+.custom_header .navbar-header {
+  position: relative;
+}
+.custom_header .navbar-header > a {
+  display: inline-block;
+}
+.custom_header .navbar-header .navbar-brand {
+  background: url(../../images/header_logo.png) no-repeat center;
+  background-size: 80%;
+  width: 60%;
+}
+.custom_header .navbar-header .app-donw {
+  background: url(../../images/header_app.png) no-repeat center;
+  background-size: 70%;
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.custom_search {
+  padding: 0 10px;
+}
+.custom_menus {
+  margin-top: 20px;
+}
+.custom_menus .col-xs-3 {
+  padding: 8px;
+}
+.custom_menus .col-xs-3 a {
+  text-align: center;
+  color: #000;
+  display: block;
+}
+.custom_menus .col-xs-3 a > img {
+  width: 100%;
+}
+.custom_menus .col-xs-3 a > span {
+  display: inline-block;
+  margin-top: 5px;
+}
+.custom_zhekou .zhekou_info {
+  background: #ff9c1b;
+  padding: 8px;
+}
+.custom_zhekou .zhekou_info > span {
+  color: #fff;
+  font-weight: bold;
+}
+.custom_zhekou .zhekou_info > a {
+  color: #fff;
+}

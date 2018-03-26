@@ -5,11 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/pages/index.css">
 </head>
 <body>
+    <!-- 顶部部通栏 -->
+        <nav class="navbar navbar-default custom_header">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"></a>
+                    <a class='app-donw navbar-right' href="#"></a>
+                </div>
+            </div>
+        </nav>
+        <!-- 搜索框 -->
+        <div class="input-group custom_search">
+            <input type="text" class="form-control" placeholder="请搜索你想要的商品">
+            <div class="input-group-btn custom_btns">
+                <button type="button" class="btn btn-default">搜索</button>
+            </div>
+        </div>
+
+        
+
+    <!-- 菜单列表 -->
+        <div class="container-fluid custom_menus">
+            
+        </div>
+    <!-- 折扣推荐 -->
+    <div class="container-fluid custom_zhekou">
+        <!-- 折扣标题 -->
+        <div class="zhekou_info clearfix">
+            <span>超值折扣推荐</span>
+            <a href="" class="glyphicon glyphicon-share-alt pull-right"></a>
+        </div>
+        <!-- 折扣商品列表 -->
+        <div class="zhekou_lists"></div>
+    </div>
+
+    <!-- 优惠信息 =》 省钱页面 -->
+
+    <!-- 底部 -->
     
 </body>
+<script src="./js/lib/require.js"></script>
 <script src="./config.js"></script>
-<script src="./js/lib/jquery-1.12.2.js"></script>
 <script src="./js/pages/index.js"></script>
 </html>
