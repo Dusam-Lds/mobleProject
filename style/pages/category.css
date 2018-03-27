@@ -1,0 +1,24 @@
+.category .category_list {
+  background: #ededed;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+}
+.category .category_list > span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.category .category_list > span:last-child {
+  color: #ccc;
+}
+.list_fenlei > ul {
+  list-style: none;
+  background: #f9f9f9;
+  padding-left: 0;
+}
+.list_fenlei > ul > li {
+  float: left;
+  width: 33.33%;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 6px;
+}

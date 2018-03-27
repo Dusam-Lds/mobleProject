@@ -1,4 +1,6 @@
+
 requirejs(['jquery','bootstrap'], function ($) {
+    // 首页菜单的数据请求
   var ajax =  $.ajax({
         url: Api.getindexmenu,
         success:function(data) {
@@ -18,7 +20,7 @@ requirejs(['jquery','bootstrap'], function ($) {
             $('.custom_menus').html(html);
         }
     })
-    
+    // 首页获取超值推荐列表
     ajax.done(function(){
         $.ajax({
             url: Api.getmoneyctrl,
