@@ -5,6 +5,8 @@ requirejs(['jquery', 'bootstrap'], function ($) {
     var ajax = $.ajax({
         url: Api.getcategorytitle,
         success: function (data) {
+            // console.log(data);
+            
             var html = "";
             for (var i = 0; i < data.result.length; i++) {
                 var obj = data.result[i];
@@ -40,7 +42,7 @@ requirejs(['jquery', 'bootstrap'], function ($) {
                             // var list = `<li><a href='../../pages/category/TV.html?categoryid=${obj.categoryId}'>${obj.category}</a></li>`
 
                             //动态跳转至子分类的商品详情
-                            var list = `<li><a href='../../pages/categorySub/subClass.html?categoryid=${obj.categoryId}'>${obj.category}</a></li>`
+                            var list = `<li><a href='../../pages/allCategory/allCategory.html?categoryid=${obj.categoryId}'>${obj.category}</a></li>`
 
                             html += list;
                         }

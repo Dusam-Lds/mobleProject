@@ -4,7 +4,7 @@ requirejs(['jquery','bootstrap'], function ($) {
   var ajax =  $.ajax({
         url: Api.getindexmenu,
         success:function(data) {
-            console.log(data);
+            // console.log(data);
             var html = "<div class='row'>"
             for (var i = 0; i < data.result.length; i++) {
                 var obj = data.result[i];
@@ -25,7 +25,7 @@ requirejs(['jquery','bootstrap'], function ($) {
         $.ajax({
             url: Api.getmoneyctrl,
             success: function(data) {
-                console.log(data);
+                // console.log(data);
                 var html = "<div class='row'>"
                 for (var i = 0; i < data.result.length; i++) {
                     var obj = data.result[i];
