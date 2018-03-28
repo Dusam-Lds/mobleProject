@@ -14,10 +14,26 @@ requirejs(['jquery','bootstrap'],function($) {
         data: { categoryid: getQueryString('categoryid')},
         dataType: "JSON",
         success:function(data) {
-            // console.log(data);
-            
+            console.log(data);
+            var html = "<div class='row'>"
+            for (var i = 0; i < data.result.length; i++) {
+                var obj = data.result[i];
+                var lists = `<div class="shop_lists clearfix">
+                                    <a class="pull-left">${obj.productImg}</a>
+                                    <div class="info_right pull-right">
+                                        <p>${obj.productName}</p>                                    
+                                        <span>${obj.productPrice}</span>
+                                        <div><span>${obj.productQuote}</span><span>${obj.productCom}</span></div>
+                                    </div>
+                                </div>`
+                html += lists;
+            }
+
+            html +="</div>"
+            $('.allCategory').html(html);
            
             
         }
     })
 })
+

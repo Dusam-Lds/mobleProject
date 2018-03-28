@@ -1,0 +1,24 @@
+.allCategory .shop_lists {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+.allCategory .shop_lists > a {
+  width: 25%;
+  display: block;
+}
+.allCategory .shop_lists > a img {
+  width: 100%;
+}
+.allCategory .shop_lists .info_right {
+  width: 75%;
+}
+.allCategory .shop_lists .info_right > p {
+  font-size: 16px;
+}
+.allCategory .shop_lists .info_right > span {
+  color: red;
+}
+.allCategory .shop_lists .info_right > div > span {
+  color: #ccc;
+  font-weight: bold;
+}
