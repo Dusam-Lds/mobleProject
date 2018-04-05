@@ -8,6 +8,7 @@ requirejs(['jquery', 'bootstrap'], function ($) {
             // console.log(data);
             
             var html = "";
+            
             for (var i = 0; i < data.result.length; i++) {
                 var obj = data.result[i];
                 var title = `<div class='category_list clearfix' data-toggle="collapse" data-target="#collapse${obj.titleId}" aria-expanded="false" aria-controls="collapse${obj.titleId}" >
@@ -56,12 +57,12 @@ requirejs(['jquery', 'bootstrap'], function ($) {
      
         })
     })
+    //用委托方式点击获取文本，存到本地，方便下的页面获取
+    $(".category").on("click", "li", function () {
+        var parameter = $(this).children().text();
+        localStorage.setItem("keyword",parameter);
 
-
-
-
-   
-
+    })
 
 })
 

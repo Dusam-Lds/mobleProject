@@ -1,0 +1,50 @@
+.detail .datail_show .img_info {
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+}
+.detail .datail_show .img_info .collect {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #95d600;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+.detail .datail_show > ul {
+  list-style: none;
+  padding-left: 0;
+}
+.detail .datail_show > ul > li {
+  float: left;
+  width: 33.33%;
+  background: #ffc527;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #d37923;
+}
+.detail .datail_show .JD_price {
+  padding: 10px 5px;
+}
+.detail .datail_show .JD_price > div {
+  float: right;
+}
+.detail .datail_show .JD_price > div > span {
+  color: red;
+}
+.detail .datail_show .JD_price > div > span:last-child {
+  background: #ff5500;
+  border-radius: 5px;
+  color: #fff;
+  padding: 4px;
+}
+.detail .datail_show .explain {
+  border-top: 1px solid #ccc;
+}
+.detail .datail_show .comment {
+  text-align: center;
+}

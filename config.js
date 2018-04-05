@@ -7,6 +7,7 @@ const Api = {
     getcategory: url + 'getcategory',//分类菜单的子分类菜单
     getcategorybyid: url + 'getcategorybyid',//根据子分类菜单的id获取分类的名称
     getproductlist: url + 'getproductlist',//子分类下的商品列表
+    getproduct: url + 'getproduct',//子分类下的商品详情
 }
 
 

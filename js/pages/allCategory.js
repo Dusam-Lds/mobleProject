@@ -19,7 +19,7 @@ requirejs(['jquery','bootstrap'],function($) {
             for (var i = 0; i < data.result.length; i++) {
                 var obj = data.result[i];
                 var lists = `<div class="shop_lists clearfix">
-                                    <a class="pull-left">${obj.productImg}</a>
+                                    <a href="../../pages/allCategory/detail.html?productid=${obj.productId}" class="pull-left">${obj.productImg}</a>
                                     <div class="info_right pull-right">
                                         <p>${obj.productName}</p>                                    
                                         <span>${obj.productPrice}</span>
@@ -31,9 +31,11 @@ requirejs(['jquery','bootstrap'],function($) {
 
             html +="</div>"
             $('.allCategory').html(html);
-           
             
         }
     })
+    //获取本地已存储的值
+    var keyword = localStorage.getItem("keyword");
+    $(".breadcrumb li.active").text(keyword);
 })
 
