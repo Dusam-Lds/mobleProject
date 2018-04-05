@@ -12,6 +12,12 @@ requirejs(['jquery', 'bootstrap'], function ($) {
         data: { productid: getQueryString('productid') },
         success: function (data) {
             console.log(data);
+            // console.log(data.result[0].productName);
+            //分类标题里面的子标题
+            var detail_title_subTitle = data.result[0].productName.split(" ")[0];
+            $(".detail_nav li .detail_brand").text(detail_title_subTitle);
+
+            
             for (let i = 0; i < data.result.length; i++) {
                 var obj = data.result[i];
                 var html = `<div class="datail_show">
@@ -37,27 +43,12 @@ requirejs(['jquery', 'bootstrap'], function ($) {
                         </div>`
             }
             $('.detail').append(html);
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           
-
-
         }
     })
+    //动态获取商品详情的标题
+    var detail_title = localStorage.getItem("keyword");
+    // console.log(detail_title);
+    $(".detail_nav li .detail_title").text(detail_title);
+    
+
 })

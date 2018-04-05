@@ -61,7 +61,6 @@ requirejs(['jquery', 'bootstrap'], function ($) {
     $(".category").on("click", "li", function () {
         var parameter = $(this).children().text();
         localStorage.setItem("keyword",parameter);
-
     })
 
 })
