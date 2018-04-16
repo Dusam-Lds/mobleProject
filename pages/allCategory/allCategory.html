@@ -48,44 +48,24 @@
         
     </div>
 
-
-
     <!-- 底部 -->
-    <div class="footer">
-        <!-- 底部的分页按钮 jq插件-->
-        <nav aria-label="...">
-            <ul class="pagination">
-                <!-- <li class="disabled">
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">上一页</span>
-                    </a>
-                </li>
-                <li class="active">
-                    <a href="#">1
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    <a href="#">4</a>
-                </li>
-                <li>
-                    <a href="#">5</a>
-                </li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">下一页</span>
-                    </a>
-                </li> -->
-            </ul>
-        </nav>
+    <div class="footer">        
+    <!-- jqPaginator分页组件结构 -->
+    <div class="demo">
+        <!-- <p id="demo4-text">当前第10页</p> -->
+        <ul id="demo4" class="pagination pagination4">
+            <li class="prev" jp-role="prev" jp-data="9">
+                <a href="javascript:void(0);"></a>
+            </li>
+            <li class="page active" jp-role="page" jp-data="10">
+                <a href="javascript:void(0);"> 10 / 100 </a>
+            </li>
+            <li class="next" jp-role="next" jp-data="11">
+                <a href="javascript:void(0);"></a>
+            </li>
+        </ul>
+    </div>
 
-        
         <ul class="clearfix">
             <li>
                 <a href="#">登陆</a>
@@ -105,11 +85,10 @@
     </div>
 </body>
 <script src="../../js/lib/jquery-1.12.2.js"></script>
+<script src="../../js/lib/jqPaginator.js"></script>
 <script src="../../js/lib/require.js"></script>
 <script src="../../config.js"></script>
-<script src="../../js/pages/allCategory.js"></script>
-<script>
 
-    
-</script>
+<script src="../../js/pages/allCategory.js"></script>
+
 </html>
